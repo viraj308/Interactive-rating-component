@@ -7,10 +7,11 @@ function placeNumber(number, id_name) {
   var two = document.getElementById("number");
   two.innerHTML = "";
   two.appendChild(one);
-  /*  var three = document.getElementById(id_name);
   var four = document.getElementById("numbers");
   var buttons = four.childNodes;
-  for (var i = 1; i < 10; i++) {
+  for (var i = 1; i < 10; i = i + 2) {
+    buttons[i].style.border = "1px solid hsl(217, 14%, 26%)";
   }
-  three.style.border = "1px solid red";  */
+  var three = document.getElementById(id_name);
+  three.style.border = "1px solid white";
 }
