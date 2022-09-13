@@ -17,7 +17,7 @@
   </head>
   <body>
     <main class="component">
-      <div class="component1">
+      <div class="component1" id="component1">
         <div class="icon">
           <img src="images/icon-star.svg" alt="" class="icon_img" />
         </div>
@@ -26,16 +26,18 @@
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <div class="numbers">
-          <p class="num">1</p>
-          <p class="num">2</p>
-          <p class="num">3</p>
-          <p class="num">4</p>
-          <p class="num">5</p>
+        <div class="numbers" id="numbers">
+          <a class="num" id="num1" onclick="placeNumber(1, 'num1')">1</a>
+          <a class="num" id="num2" onclick="placeNumber(2, 'num2')">2</a>
+          <a class="num" id="num3" onclick="placeNumber(3, 'num3')">3</a>
+          <a class="num" id="num4" onclick="placeNumber(4, 'num4')">4</a>
+          <a class="num" id="num5" onclick="placeNumber(5, 'num5')">5</a>
         </div>
-        <div class="button"><a href="" class="btn">Submit</a></div>
+        <div class="button">
+          <a href="#" class="btn" onclick="swapCard();">Submit</a>
+        </div>
       </div>
-      <div class="component2">
+      <div class="component2" id="component2">
         <div class="image">
           <img
             src="images/illustration-thank-you.svg"
@@ -43,7 +45,9 @@
           />
         </div>
         <div class="content">
-          <p class="selection-text">You selected out of 5</p>
+          <p class="selection-text">
+            You selected<span id="number"> nothing </span>out of 5
+          </p>
           <h1 class="thank-you">Thank you!</h1>
           <p class="thank-text">
             We appreciate you taking the time to give a rating. If you ever need
@@ -52,5 +56,6 @@
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
