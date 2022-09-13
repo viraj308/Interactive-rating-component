@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --VdarkBlue: hsl(216, 12%, 8%);
+    --ff: 'Overpass', sans-serif;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body {
+    font-family: var(--ff);
+    font-size: 0.938rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VdarkBlue);
+    color: var(--lightGrey);
+
+}
+.component {
+    width: 90.6%;
+    max-width: 400px;
+    min-width: 220px;
+    background-color: var(--darkBlue);
+    padding: 2em 1.8em;
+    border-radius: 15px;
+    word-spacing: 1px;
+}
+.component2 {
+    display: none;
+}
+.heading {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 0.5em;
+}
+.icon_img {
+    height: 0.8rem;
+}
+.icon {
+    display: inline-block;
+    text-align: center;
+    padding: 0.8em;
+    border-radius: 50%;
+    background-color: hsl(217, 14%, 26%);
+    margin-bottom: 1em;
+}
+.text {
+    margin-bottom: 1.5em;
+}
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+.num {
+    background-color: hsl(217, 14%, 26%);
+    text-align: center;
+    padding: 0.8em 1.2em;
+    border-radius: 50%;
+}
+.num:hover {
+    background-color: var(--mediumGrey);
+}
+.btn {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: var(--orange);
+    padding: 0.9em;
+    text-align: center;
+    border-radius: 30px;
+}
+.btn:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
+.component1 {
+    display: block;
+}
+.component2 {
+    display: block;
+    display: none;
+}
+/* second component */
+
+.image {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 1.8em;
+}
+.selection-text {
+    display: inline-block;
+    color: var(--orange);
+    background-color: hsl(217, 14%, 26%);
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    margin-bottom: 1.5em;
+}
+.content {
+    text-align: center;
+}
+.thank-you {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 0.7em;
+}
+@media(min-width: 400px) {
+    html {
+        font-size: 1.1rem;
+    }
+}
