@@ -1,3 +1,12 @@
+function call() {
+  var element = document.getElementById("number");
+  if (element.innerHTML === "") {
+    alert("Please select a ranting number");
+  } else {
+    swapCard();
+  }
+}
+
 function swapCard() {
   document.getElementById("component1").className += " hidden";
   document.getElementById("component2").className += " visible";
